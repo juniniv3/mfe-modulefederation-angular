@@ -1,0 +1,22 @@
+{
+  "name": "mfe-modulefederation-angular",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "workspaces": [
+    "remoteA",
+    "remoteB",
+    "remoteC",
+    "shell"
+  ],
+  "scripts": {
+    "startShell": "cd shell && ng serve",
+    "startRemoteA": "cd remoteA && ng serve --port 4201",
+    "startRemoteB": "cd remoteB && ng serve --port 4202",
+    "startRemoteC": "cd remoteC && ng serve --port 4203",
+    "develop": "npm run startShell & npm run startRemoteA & npm run startRemoteB & npm run startRemoteC",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
