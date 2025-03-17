@@ -9,4 +9,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'remoteA';
+  constructor() {
+    console.log('remoteA is loaded');
+  }
 }
