@@ -16,7 +16,11 @@
     "startRemoteA": "cd remoteA && ng serve --port 4201",
     "startRemoteB": "cd remoteB && ng serve --port 4202",
     "startRemoteC": "cd remoteC && ng serve --port 4203",
+    "buildRemoteA": "cd remoteA && ng build",
+    "buildRemoteB": "cd remoteB && ng build",
+    "buildRemoteC": "cd remoteC && ng build",
     "develop": "npm run startShell & npm run startRemoteA & npm run startRemoteB & npm run startRemoteC",
+    "build": "npm run buildRemoteA && npm run buildRemoteB && npm run buildRemoteC",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
